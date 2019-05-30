@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="./bridge.js"></script>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 60px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+</style>
+</head>
+<body>
+<center><button onclick="sendSyncNormalMessage()" class="button button1">[sync]JS调原生无回调</button></center>
+<center><button onclick="sendSyncCallbackMessage()" class="button button1">[sync]JS调原生回调</button></center>
+<center><button onclick="sendAsyncNormalMessage()" class="button button1">[async]JS调原生无回调</button></center>
+<center><button onclick="sendAsyncCallbackMessage()" class="button button1">[async]JS调原生回调</button></center>
+<center><button onclick="sendSyncMessageA1()" class="button button1">JS2Native-ModuleA-testA1</button></center>
+<center><button onclick="sendSyncNormalCallbackMessageA2()" class="button button1">JS2Native-ModuleA-testA2</button></center>
+<center><button onclick="sendSyncCallbackMessageA3()" class="button button1">JS2Native-ModuleA-testA3</button></center>
+</body>
+</html>

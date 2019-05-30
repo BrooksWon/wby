@@ -1,0 +1,6 @@
+framework module Pods_BTJSBridge_Tests {
+  umbrella header "Pods-BTJSBridge_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
