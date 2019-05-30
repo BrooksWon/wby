@@ -22,7 +22,7 @@ pod 'BTJSBridge'
 
 ## Author
 
-BrooksWon, wangjianyu@weiboyi.com
+BrooksWon
 
 ## License
 
