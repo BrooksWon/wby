@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008465F60A1F0A9ABA6492B1DE2A8E95 /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BTJSBridge_Tests.framework; path = "Pods-BTJSBridge_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		008465F60A1F0A9ABA6492B1DE2A8E95 /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C099A58D7055071C9445C407DB001F /* Pods-BTJSBridge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTJSBridge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		242EC0A7C1FF777EB8B5EE718E2550E1 /* Pods-BTJSBridge_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Tests-resources.sh"; sourceTree = "<group>"; };
 		243A5C1EC40370C69D24F80A6639FF16 /* Pods-BTJSBridge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -40,9 +40,9 @@
 		8C5D5BBBE8A223FFEC8EA7352C2741C1 /* Pods-BTJSBridge_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTJSBridge_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90AA91F58EA8407B05C714B4AAA5AE1F /* Pods-BTJSBridge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BTJSBridge_Tests-umbrella.h"; sourceTree = "<group>"; };
 		934977D9E25157917F85A78BE065ADFC /* Pods-BTJSBridge_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTJSBridge_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB04BA262EF9CEA48FFCA9DA37FD40C8 /* Pods-BTJSBridge_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Example-resources.sh"; sourceTree = "<group>"; };
-		B007E23BA409C424E32CAA3630E3AFEC /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BTJSBridge_Example.framework; path = "Pods-BTJSBridge_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B007E23BA409C424E32CAA3630E3AFEC /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85D419C463E28FC37916B34B734BF8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CA41F4630649EB1D8FEDCA9D475730 /* Pods-BTJSBridge_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BTJSBridge_Example-umbrella.h"; sourceTree = "<group>"; };
 		D3922C01A6CFD02185AFA427DCD6445D /* Pods-BTJSBridge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -225,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
