@@ -1,0 +1,6 @@
+framework module BTJSBridge {
+  umbrella header "BTJSBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

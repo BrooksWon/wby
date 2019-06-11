@@ -6,6 +6,8 @@
 //
 
 #import "WKWebView+BTJSBridge.h"
+#import "WKWebViewCookieManager.h"
+#import "WKWebViewPoolHandler.h"
 
 @implementation WKWebView (BTJSBridge)
 
@@ -20,13 +22,16 @@
     }
     configuration.preferences.javaScriptCanOpenWindowsAutomatically = YES;
     configuration.preferences.javaScriptEnabled = YES;
+    configuration.processPool = [[WKWebViewPoolHandler sharedInstance] defaultPool];
     
     if (webviewConfiguration.userContentController == nil) {
         webviewConfiguration.userContentController = [[WKUserContentController alloc] init];
     }
     [webviewConfiguration.userContentController addUserScript:userScript];
-//    [webviewConfiguration.userContentController addScriptMessageHandler:nil name:@"Some Object"];
-
+    
+    //添加cookie
+    WKUserScript *cookieUserScript = [[WKUserScript alloc] initWithSource:[WKWebViewCookieManager clientCookieScripts] injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
+    [webviewConfiguration.userContentController addUserScript:cookieUserScript];
     
     
     WKWebView *webview = [[WKWebView alloc] initWithFrame:CGRectZero configuration:webviewConfiguration];

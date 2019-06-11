@@ -6,6 +6,8 @@
 //
 
 #import "BTJSBridge.h"
+#import <UIKit/UIKit.h>
+#import "WKWebViewCookieManager.h"
 
 @interface BTJSBridge()
 
@@ -22,6 +24,7 @@
 - (void)bindBridgeWithWebView:(WKWebView *)webView {
     self.webView = webView;
     self.webView.UIDelegate = self;
+    self.webView.navigationDelegate = self;
 }
 
 #pragma mark - private method
@@ -30,23 +33,15 @@
     if (!params) {
         params = @{};
     }
-//    NSString *paramsString = [self _serializeMessageData:params];
-//    NSString *paramsJSString = [self _transcodingJavascriptMessage:paramsString];
-//    NSString* javascriptCommand = [NSString stringWithFormat:@"%@('%@', '%@');", msg,actionId,paramsJSString];
+    NSString *paramsString = [self _serializeMessageData:params];
+    NSString *paramsJSString = [self _transcodingJavascriptMessage:paramsString];
+    NSString* javascriptCommand = [NSString stringWithFormat:@"%@('%@', '%@');", msg,actionId,paramsJSString];
+    
     if ([[NSThread currentThread] isMainThread]) {
-        NSString *paramsString = [self _serializeMessageData:params];
-        NSString *paramsJSString = [self _transcodingJavascriptMessage:paramsString];
-        NSString* javascriptCommand = [NSString stringWithFormat:@"%@('%@', '%@');", msg,actionId,paramsJSString];
-//        [self.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
-        [self.webView evaluateJavaScript:javascriptCommand completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-            NSLog(@"%@----%@",result, error);
-        }];
+        [self.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
     } else {
         __strong typeof(self)strongSelf = self;
         dispatch_sync(dispatch_get_main_queue(), ^{
-            NSString *paramsString = [self _serializeMessageData:params];
-            NSString *paramsJSString = [self _transcodingJavascriptMessage:paramsString];
-            NSString* javascriptCommand = [NSString stringWithFormat:@"%@('%@', '%@');", msg,actionId,paramsJSString];
             [strongSelf.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
         });
     }
@@ -62,7 +57,6 @@
 // JSON Javascript编码处理
 - (NSString *)_transcodingJavascriptMessage:(NSString *)message
 {
-    //NSLog(@"dispatchMessage = %@",message);
     message = [message stringByReplacingOccurrencesOfString:@"\\" withString:@"\\\\"];
     message = [message stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
     message = [message stringByReplacingOccurrencesOfString:@"\'" withString:@"\\\'"];
@@ -99,17 +93,7 @@ static BOOL hadAddScriptMessageHandler = NO;
         }
         [self.handlerMap setObject:handlerDic forKey:handlerName];
         [handlerDic setObject:handler forKey:actionName];
-        
-        /**
-         苹果WKWebView scriptMessageHandler注入 - JS调用
-         
-         addScriptMessageHandler方法注入的对象被放到了，全局对象下一个Webkit对象下面，想要拿到这个对象需要这样拿： 'window.webkit.messageHandlers.nativeObject'。
-         
-         而addScriptMessageHandler注入其实只给注入对象起了一个名字nativeObject，但这个对象的能力是不能任意指定的，只有一个函数postMessage，因此JS的调用方式也只能是：
-         
-             'js侧代码: window.webkit.messageHandlers.nativeObject.postMessage(data)'。
-         
-         */
+
         if (!hadAddScriptMessageHandler) {
             [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"BTJSBridge"];
             hadAddScriptMessageHandler = YES;
@@ -124,15 +108,7 @@ static BOOL hadAddScriptMessageHandler = NO;
 }
 
 - (void)dealloc {
-    // addScriptMessageHandler 很容易导致循环引用
-    // 业务控制器 强引用了WKWebView,WKWebView copy(强引用了）configuration， configuration copy （强引用了）userContentController
-    // userContentController 强引用了 self （控制器）
-    // 因此这里要记得移除handlers
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"BTJSBridge"];
-    
-//    for (NSString *action in [(NSDictionary*)self.handlerMap.allValues allKeys]) {
-//        [self.webView.configuration.userContentController removeScriptMessageHandlerForName:action];
-//    }
 }
 
 #pragma mark - delegate
@@ -166,6 +142,14 @@ static BOOL hadAddScriptMessageHandler = NO;
 }
 
 
+/** Prompt
+ 
+    作为js中prompt接口的实现，默认需要有一个输入框一个按钮，点击确认按钮回传输入值
+    当然可以添加多个按钮以及多个输入框，不过completionHandler只有一个参数，如果有多个输入框，需要将多个输入框中的值通过某种方式拼接成一个字符串回传，js接收到之后再做处理
+ 
+    参数 prompt 为 prompt(<message>, <defaultValue>);中的<message>
+    参数defaultText 为 prompt(<message>, <defaultValue>);中的 <defaultValue>
+ */
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler{
     if (webView != self.webView) {
         completionHandler(@"");
@@ -192,53 +176,84 @@ static BOOL hadAddScriptMessageHandler = NO;
     }
 }
 
-// 显示一个按钮。点击后调用completionHandler回调
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
+/**  Alert
+    此方法作为js的alert方法接口的实现，默认弹出窗口应该只有提示信息及一个确认按钮，当然可以添加更多按钮以及其他内容，但是并不会起到什么作用
+    点击确认按钮的相应事件需要执行completionHandler，这样js才能继续执行
+ 
+    参数 message为  js 方法 alert(<message>) 中的<message>
+ */
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler{
+
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-        completionHandler();
-    }]];
-//    [self presentViewController:alertController animated:YES completion:nil];
+    NSData *jsonData = [message dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    
+     UIAlertView* customAlert = [[UIAlertView alloc] initWithTitle:@""
+                                                           message:message
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"done"
+                                                 otherButtonTitles:nil];
+     [customAlert show];
+    
+    completionHandler(@" hahahahahahaha ");
 }
 
-// 显示两个按钮，通过completionHandler回调判断用户点击的确定还是取消按钮
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
+
+/** Confirm
+ 
+    作为js中confirm接口的实现，需要有提示信息以及两个相应事件， 确认及取消，并且在completionHandler中回传相应结果，确认返回YES， 取消返回NO
+ 
+    参数 message为  js 方法 confirm(<message>) 中的<message>
+ */
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler{
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-        completionHandler(YES);
-    }]];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-        completionHandler(NO);
-    }]];
+    completionHandler(@" hahahahahahaha ");
+    
+
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleAlert];
+//    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//
+//        completionHandler(YES);
+//    }]];
+//    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//
+//        completionHandler(NO);
+//    }]];
 //    [self presentViewController:alertController animated:YES completion:nil];
     
 }
+
+#pragma mark - WKNavigationDelegate
+
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView {
+    /*
+     解决内存过大引起的白屏问题
+     */
+    [webView reload];
+}
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    
+    /*
+     //如果是302重定向请求，此处拦截带上cookie重新request
+     WKWebViewCookieManager *newRequest = [WKWebViewCookieManager newRequest:navigationAction.request];
+     [webView loadRequest:newRequest];
+     */
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
+
 
 @end
 
 @implementation BTJSBridge (OC_CALL_JS)
 
 -(void)sendEventName:(NSString *)event withParams:(NSDictionary *)params withCallback:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler{
-//    NSString *jsFunction = @'window.eventDispatcher';
-    NSString *jsFunction = @"testCallback";
-    NSString *paramsString = [self _serializeMessageData:params];
-    NSString *paramsJSString = [self _transcodingJavascriptMessage:paramsString];
-    NSString* javascriptCommand = [NSString stringWithFormat:@"%@('%@');", jsFunction,paramsJSString];
-    if ([[NSThread currentThread] isMainThread]) {
-        [self.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
-    } else {
-        __strong typeof(self)strongSelf = self;
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [strongSelf.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
-        });
-    }
-    
-//    [self injectMessageFuction:jsFunction withActionId:event withParams:params withCallback:handler];
+    NSString *jsFunction = @"window.eventDispatcher";
+
+    [self injectMessageFuction:jsFunction withActionId:event withParams:params withCallback:handler];
 }
 
 @end

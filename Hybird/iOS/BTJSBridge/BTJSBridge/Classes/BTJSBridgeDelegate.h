@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BTJSBridgeDelegate <NSObject>
 
-@required
+@optional
 
 /*! @abstract Invoked when a script message is received from a webpage.
  @param userContentController The user content controller invoking the
@@ -20,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param message The script message received.
  */
 - (void)bt_userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message;
-
-@optional
 
 #pragma - WKUIDelegate method
 
@@ -74,6 +72,23 @@ NS_ASSUME_NONNULL_BEGIN
  If you do not implement this method, the web view will behave as if the user selected the Cancel button.
  */
 - (void)bt_webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler;
+
+#pragma mark - WKNavigationDelegate
+
+/*! @abstract Decides whether to allow or cancel a navigation.
+ @param webView The web view invoking the delegate method.
+ @param navigationAction Descriptive information about the action
+ triggering the navigation request.
+ @param decisionHandler The decision handler to call to allow or cancel the
+ navigation. The argument is one of the constants of the enumerated type WKNavigationActionPolicy.
+ @discussion If you do not implement this method, the web view will load the request or, if appropriate, forward it to another application.
+ */
+- (void)bt_webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+
+/*! @abstract Invoked when the web view's web content process is terminated.
+ @param webView The web view whose underlying web content process was terminated.
+ */
+- (void)bt_webViewWebContentProcessDidTerminate:(WKWebView *)webView API_AVAILABLE(macosx(10.11), ios(9.0));
 
 @end
 

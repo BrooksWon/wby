@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B41C7CB6DE7AB069A0CF382 /* Pods_BTJSBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B47ACBA2E7B0315D3D87858 /* Pods_BTJSBridge_Tests.framework */; };
+		5B87DB3F6627B7F06BA8163A /* Pods_BTJSBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B78569FE81F19338103EAC /* Pods_BTJSBridge_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,19 +23,13 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		96F0078802D73F070C2B8D2B /* Pods_BTJSBridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D677136B99E9B1588A20060 /* Pods_BTJSBridge_Example.framework */; };
 		9876335F22939BD000CF45BD /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 9876335D22939BD000CF45BD /* test.html */; };
 		9876336022939BD000CF45BD /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 9876335E22939BD000CF45BD /* bridge.js */; };
-		987633A722963EBD00CF45BD /* BTJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9876339E22963EBD00CF45BD /* BTJSBridge.m */; };
-		987633A822963EBD00CF45BD /* WKWebView+BTJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 987633A022963EBD00CF45BD /* WKWebView+BTJSBridge.m */; };
-		987633A922963EBD00CF45BD /* BTJSBridgeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 987633A122963EBD00CF45BD /* BTJSBridgeMessage.m */; };
-		987633AA22963EBD00CF45BD /* BTJSBridge+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 987633A422963EBD00CF45BD /* BTJSBridge+Common.m */; };
-		98763424229CE88900CF45BD /* WKWebViewCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98763423229CE88900CF45BD /* WKWebViewCookieManager.m */; };
-		9876342A229CFAAC00CF45BD /* WKWebViewPoolHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 98763429229CFAAC00CF45BD /* WKWebViewPoolHandler.m */; };
 		98C9BE352272F95A004FB80D /* jsbridge-core.js in Resources */ = {isa = PBXBuildFile; fileRef = 98C9BE322272F95A004FB80D /* jsbridge-core.js */; };
 		98C9BE362272F95A004FB80D /* jsbridge-common.js in Resources */ = {isa = PBXBuildFile; fileRef = 98C9BE332272F95A004FB80D /* jsbridge-common.js */; };
 		98C9BE372272F95A004FB80D /* jsbridge-ModuleA.js in Resources */ = {isa = PBXBuildFile; fileRef = 98C9BE342272F95A004FB80D /* jsbridge-ModuleA.js */; };
 		98C9BE462272FA37004FB80D /* BTJSBridge+ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9BE452272FA37004FB80D /* BTJSBridge+ModuleA.m */; };
+		F6F8DA6E33F4209AC4895D47 /* Pods_BTJSBridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFD3E8347B068B2A38B191A /* Pods_BTJSBridge_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +45,9 @@
 /* Begin PBXFileReference section */
 		08DE0AABAB551DE7ADEF27A0 /* Pods-BTJSBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTJSBridge_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTJSBridge_Example/Pods-BTJSBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0DFD77B969F8EE597A7D002F /* Pods-BTJSBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTJSBridge_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTJSBridge_Tests/Pods-BTJSBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1CFD3E8347B068B2A38B191A /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9335D8F3E790A4975A859E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4E11ED34BED1315C0F8779B9 /* BTJSBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BTJSBridge.podspec; path = ../BTJSBridge.podspec; sourceTree = "<group>"; };
+		4E11ED34BED1315C0F8779B9 /* BTJSBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BTJSBridge.podspec; path = ../BTJSBridge.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* BTJSBridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTJSBridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,25 +68,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7B47ACBA2E7B0315D3D87858 /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B78569FE81F19338103EAC /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D677136B99E9B1588A20060 /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DECA9DD952A7F154075C47D /* Pods-BTJSBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTJSBridge_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTJSBridge_Tests/Pods-BTJSBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9876335D22939BD000CF45BD /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		9876335E22939BD000CF45BD /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
-		9876339E22963EBD00CF45BD /* BTJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTJSBridge.m; sourceTree = "<group>"; };
-		9876339F22963EBD00CF45BD /* BTJSBridge+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTJSBridge+Common.h"; sourceTree = "<group>"; };
-		987633A022963EBD00CF45BD /* WKWebView+BTJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+BTJSBridge.m"; sourceTree = "<group>"; };
-		987633A122963EBD00CF45BD /* BTJSBridgeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTJSBridgeMessage.m; sourceTree = "<group>"; };
-		987633A222963EBD00CF45BD /* BTJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTJSBridge.h; sourceTree = "<group>"; };
-		987633A322963EBD00CF45BD /* WKWebView+BTJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+BTJSBridge.h"; sourceTree = "<group>"; };
-		987633A422963EBD00CF45BD /* BTJSBridge+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTJSBridge+Common.m"; sourceTree = "<group>"; };
-		987633A522963EBD00CF45BD /* BTJSBridgeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTJSBridgeMessage.h; sourceTree = "<group>"; };
-		987633A622963EBD00CF45BD /* BTJSBridgeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTJSBridgeDelegate.h; sourceTree = "<group>"; };
-		98763422229CE88900CF45BD /* WKWebViewCookieManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewCookieManager.h; sourceTree = "<group>"; };
-		98763423229CE88900CF45BD /* WKWebViewCookieManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewCookieManager.m; sourceTree = "<group>"; };
-		98763428229CFAAC00CF45BD /* WKWebViewPoolHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewPoolHandler.h; sourceTree = "<group>"; };
-		98763429229CFAAC00CF45BD /* WKWebViewPoolHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewPoolHandler.m; sourceTree = "<group>"; };
 		988F0F3DFB34DA0637017EF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		98C9BE322272F95A004FB80D /* jsbridge-core.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jsbridge-core.js"; sourceTree = "<group>"; };
 		98C9BE332272F95A004FB80D /* jsbridge-common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jsbridge-common.js"; sourceTree = "<group>"; };
@@ -109,7 +90,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				96F0078802D73F070C2B8D2B /* Pods_BTJSBridge_Example.framework in Frameworks */,
+				F6F8DA6E33F4209AC4895D47 /* Pods_BTJSBridge_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +101,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2B41C7CB6DE7AB069A0CF382 /* Pods_BTJSBridge_Tests.framework in Frameworks */,
+				5B87DB3F6627B7F06BA8163A /* Pods_BTJSBridge_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +147,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				8D677136B99E9B1588A20060 /* Pods_BTJSBridge_Example.framework */,
-				7B47ACBA2E7B0315D3D87858 /* Pods_BTJSBridge_Tests.framework */,
+				1CFD3E8347B068B2A38B191A /* Pods_BTJSBridge_Example.framework */,
+				78B78569FE81F19338103EAC /* Pods_BTJSBridge_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,7 +156,6 @@
 		6003F593195388D20070C39A /* Example for BTJSBridge */ = {
 			isa = PBXGroup;
 			children = (
-				9876339D22963EBD00CF45BD /* Classes */,
 				98C9BDFE2272F5F8004FB80D /* jsbridge-core */,
 				6003F59C195388D20070C39A /* BTAppDelegate.h */,
 				6003F59D195388D20070C39A /* BTAppDelegate.m */,
@@ -234,26 +214,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		9876339D22963EBD00CF45BD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				987633A222963EBD00CF45BD /* BTJSBridge.h */,
-				9876339E22963EBD00CF45BD /* BTJSBridge.m */,
-				9876339F22963EBD00CF45BD /* BTJSBridge+Common.h */,
-				987633A422963EBD00CF45BD /* BTJSBridge+Common.m */,
-				987633A622963EBD00CF45BD /* BTJSBridgeDelegate.h */,
-				987633A522963EBD00CF45BD /* BTJSBridgeMessage.h */,
-				987633A122963EBD00CF45BD /* BTJSBridgeMessage.m */,
-				987633A322963EBD00CF45BD /* WKWebView+BTJSBridge.h */,
-				987633A022963EBD00CF45BD /* WKWebView+BTJSBridge.m */,
-				98763422229CE88900CF45BD /* WKWebViewCookieManager.h */,
-				98763423229CE88900CF45BD /* WKWebViewCookieManager.m */,
-				98763428229CFAAC00CF45BD /* WKWebViewPoolHandler.h */,
-				98763429229CFAAC00CF45BD /* WKWebViewPoolHandler.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		98C9BDFE2272F5F8004FB80D /* jsbridge-core */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +235,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				FC1EE5DB01F9CE9F1CD02E3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -410,6 +371,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC1EE5DB01F9CE9F1CD02E3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BTJSBridge_Example/Pods-BTJSBridge_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BTJSBridge/BTJSBridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTJSBridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTJSBridge_Example/Pods-BTJSBridge_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,14 +401,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* BTAppDelegate.m in Sources */,
-				987633A822963EBD00CF45BD /* WKWebView+BTJSBridge.m in Sources */,
-				9876342A229CFAAC00CF45BD /* WKWebViewPoolHandler.m in Sources */,
-				987633AA22963EBD00CF45BD /* BTJSBridge+Common.m in Sources */,
 				98C9BE462272FA37004FB80D /* BTJSBridge+ModuleA.m in Sources */,
-				98763424229CE88900CF45BD /* WKWebViewCookieManager.m in Sources */,
-				987633A922963EBD00CF45BD /* BTJSBridgeMessage.m in Sources */,
 				6003F5A7195388D20070C39A /* BTViewController.m in Sources */,
-				987633A722963EBD00CF45BD /* BTJSBridge.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
