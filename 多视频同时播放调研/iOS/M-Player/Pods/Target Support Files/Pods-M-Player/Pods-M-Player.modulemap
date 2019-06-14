@@ -1,0 +1,6 @@
+framework module Pods_M_Player {
+  umbrella header "Pods-M-Player-umbrella.h"
+
+  export *
+  module * { export * }
+}

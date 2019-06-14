@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BTJSBridgeMessage : NSObject
 
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict NS_DESIGNATED_INITIALIZER;
+-(instancetype)init UNAVAILABLE_ATTRIBUTE;
++(instancetype)new UNAVAILABLE_ATTRIBUTE;
 
 @property (nonatomic, copy, readonly) NSString * handler;
 @property (nonatomic, copy, readonly) NSString * action;

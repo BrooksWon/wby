@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B1CAA6B93E6962C7C8E7AEA43509A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		5B398EC99BFDE4946924604867497EA7 /* Pods-BTJSBridge_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2CA41F4630649EB1D8FEDCA9D475730 /* Pods-BTJSBridge_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258ED613EE8AD92F1E9BE1C8A12EF7DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		33AB2B3CDAFEB991B8AD012A1A444152 /* WKWebViewCookieManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC733B7FDB5B2643FBE7AC4B568159E /* WKWebViewCookieManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3697FB28992AF78C5C5A1AA437C5279E /* BTJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DB8283E18C751DC41BC6DA9F4CE92 /* BTJSBridge.m */; };
+		3D78419FA838F7AF2364E8E0CD6B87E6 /* BTJSBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF46EB1E37C9753CCF999D49B1C2A92 /* BTJSBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE575505749E93A98DBAE2A0204CA9C /* BTJSBridgeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4232F3DDF0DD612369AF4BFDEB6412C1 /* BTJSBridgeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D1CB74F7DC3FACD1F7F47A44D97D089 /* BTJSBridge+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5C8B325D8387107085FFEEEA258F1 /* BTJSBridge+Common.m */; };
+		67F7A38940DA7D27166580E3AE60B4E7 /* BTJSBridge+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BE063DBD29D84E4BC5E13846E64C4CEF /* BTJSBridge+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77953077594021E3774BDE01BB132921 /* Pods-BTJSBridge_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA339613CAFB521A44BD685F59D3D5 /* Pods-BTJSBridge_Tests-dummy.m */; };
-		931E3EF84E23AF6642A817CB1A683AAA /* Pods-BTJSBridge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8206AFF420DEB08CD6546A3CE99B186 /* Pods-BTJSBridge_Example-dummy.m */; };
+		794B867BD584964676BE1FA1D0DD1322 /* WKWebView+BTJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18873A646EB09C4EA138E608DA82C648 /* WKWebView+BTJSBridge.m */; };
+		8E3796DE033B20E468D11399A3B714E0 /* Pods-BTJSBridge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8206AFF420DEB08CD6546A3CE99B186 /* Pods-BTJSBridge_Example-dummy.m */; };
+		98B94E564B1FF4E2E88C63AA02C30007 /* WKWebViewPoolHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A52AC8BB64BE1A05F81F22AB98FA43 /* WKWebViewPoolHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B865F714A1574A05A9B2725596263788 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BCC77210A8E28BEFF2757CF872C82137 /* BTJSBridgeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A4832FEFFD0B5CC579AC9261FCB3C138 /* BTJSBridgeMessage.m */; };
+		C5C7A32E6FD7FC1DE73F0402A2D5803B /* WKWebView+BTJSBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = F90CFD6501C575A0AC0BB922DE6BABD6 /* WKWebView+BTJSBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FBCAD0B513EEDFB27011C6DE29DBDA /* BTJSBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAB2EBD4C2A61222C18444F451D3DCD /* BTJSBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC74339AA161A25F508CEA0C2525EB1 /* BTJSBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B10286C6A9877030BFE8A668390F690B /* BTJSBridge-dummy.m */; };
+		DC79F5E3D405B499A253BEED4D78B8D6 /* WKWebViewCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452CD4CCB9976C5019C2CFB7E16BF9EE /* WKWebViewCookieManager.m */; };
+		DDC2B0F191A3BF8ED97EF6879002C802 /* WKWebViewPoolHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA54AB9C020C0812BBB970552FAA4A6 /* WKWebViewPoolHandler.m */; };
+		E346BD10A8316FCA1D76A50C4B114540 /* BTJSBridgeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E83F5ADB0FAF98BAD235C79FFA8A70C /* BTJSBridgeMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED72E63BE5291A8A2748E06D3781CD50 /* Pods-BTJSBridge_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2CA41F4630649EB1D8FEDCA9D475730 /* Pods-BTJSBridge_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5FDCB82D52D0218D69FD8570B61A6E7 /* Pods-BTJSBridge_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AA91F58EA8407B05C714B4AAA5AE1F /* Pods-BTJSBridge_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8A10A6C9CEC63A746C0E99A9E61CA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -20,36 +36,66 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B776A08ADACFC4B8CCAA97949031863F;
+			remoteGlobalIDString = 2A0DB72988DFC7C42CE6041242DFF323;
 			remoteInfo = "Pods-BTJSBridge_Example";
+		};
+		72DB5FAE0FD22B15BFA66C46A3ED1DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34D733CA731F383D3E5F938CC3C3892;
+			remoteInfo = BTJSBridge;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008465F60A1F0A9ABA6492B1DE2A8E95 /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C43B02CF6778EB63A19D372D139A4C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0EA54AB9C020C0812BBB970552FAA4A6 /* WKWebViewPoolHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewPoolHandler.m; path = BTJSBridge/Classes/WKWebViewPoolHandler.m; sourceTree = "<group>"; };
+		18873A646EB09C4EA138E608DA82C648 /* WKWebView+BTJSBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+BTJSBridge.m"; path = "BTJSBridge/Classes/WKWebView+BTJSBridge.m"; sourceTree = "<group>"; };
 		20C099A58D7055071C9445C407DB001F /* Pods-BTJSBridge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTJSBridge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		242EC0A7C1FF777EB8B5EE718E2550E1 /* Pods-BTJSBridge_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Tests-resources.sh"; sourceTree = "<group>"; };
 		243A5C1EC40370C69D24F80A6639FF16 /* Pods-BTJSBridge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2DC733B7FDB5B2643FBE7AC4B568159E /* WKWebViewCookieManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewCookieManager.h; path = BTJSBridge/Classes/WKWebViewCookieManager.h; sourceTree = "<group>"; };
+		2E83F5ADB0FAF98BAD235C79FFA8A70C /* BTJSBridgeMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTJSBridgeMessage.h; path = BTJSBridge/Classes/BTJSBridgeMessage.h; sourceTree = "<group>"; };
 		2ED2FD2D09D3670B8BE1B1AC8B1E641F /* Pods-BTJSBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTJSBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3545A0636964A4AA7B12F5410414AA95 /* Pods-BTJSBridge_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BTJSBridge_Tests.modulemap"; sourceTree = "<group>"; };
+		4232F3DDF0DD612369AF4BFDEB6412C1 /* BTJSBridgeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTJSBridgeDelegate.h; path = BTJSBridge/Classes/BTJSBridgeDelegate.h; sourceTree = "<group>"; };
+		452CD4CCB9976C5019C2CFB7E16BF9EE /* WKWebViewCookieManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewCookieManager.m; path = BTJSBridge/Classes/WKWebViewCookieManager.m; sourceTree = "<group>"; };
+		481C6875F22E72BDF5A0ED72865C2DC1 /* BTJSBridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BTJSBridge.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48A52AC8BB64BE1A05F81F22AB98FA43 /* WKWebViewPoolHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewPoolHandler.h; path = BTJSBridge/Classes/WKWebViewPoolHandler.h; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BAD93644F0C57B60AC5BA3119E0E5DC /* Pods_BTJSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BTJSBridge_Tests.framework; path = "Pods-BTJSBridge_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		600E33BE5104F7CE2FB72C9A6296C621 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAA339613CAFB521A44BD685F59D3D5 /* Pods-BTJSBridge_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BTJSBridge_Tests-dummy.m"; sourceTree = "<group>"; };
 		757C32AA9F6A8885D13A9CFB9DF81749 /* Pods-BTJSBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTJSBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		814DB8283E18C751DC41BC6DA9F4CE92 /* BTJSBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTJSBridge.m; path = BTJSBridge/Classes/BTJSBridge.m; sourceTree = "<group>"; };
+		83C5C8B325D8387107085FFEEEA258F1 /* BTJSBridge+Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "BTJSBridge+Common.m"; path = "BTJSBridge/Classes/BTJSBridge+Common.m"; sourceTree = "<group>"; };
 		84541C529EA0D0D23CE9B38E10D5E456 /* Pods-BTJSBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTJSBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A620E19AD699344C0422D347314A716 /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BTJSBridge_Example.framework; path = "Pods-BTJSBridge_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBC0F0B6D03B890415205396798D37D /* BTJSBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BTJSBridge.framework; path = BTJSBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5D5BBBE8A223FFEC8EA7352C2741C1 /* Pods-BTJSBridge_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTJSBridge_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90AA91F58EA8407B05C714B4AAA5AE1F /* Pods-BTJSBridge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BTJSBridge_Tests-umbrella.h"; sourceTree = "<group>"; };
 		934977D9E25157917F85A78BE065ADFC /* Pods-BTJSBridge_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BTJSBridge_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2E746C5627BC38CB32FD7DE6082138C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A4832FEFFD0B5CC579AC9261FCB3C138 /* BTJSBridgeMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTJSBridgeMessage.m; path = BTJSBridge/Classes/BTJSBridgeMessage.m; sourceTree = "<group>"; };
 		AB04BA262EF9CEA48FFCA9DA37FD40C8 /* Pods-BTJSBridge_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Example-resources.sh"; sourceTree = "<group>"; };
-		B007E23BA409C424E32CAA3630E3AFEC /* Pods_BTJSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTJSBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC02B77A5E859AD9AF91E89D618C3F88 /* BTJSBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTJSBridge.xcconfig; sourceTree = "<group>"; };
+		ADF46EB1E37C9753CCF999D49B1C2A92 /* BTJSBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTJSBridge-umbrella.h"; sourceTree = "<group>"; };
+		B10286C6A9877030BFE8A668390F690B /* BTJSBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTJSBridge-dummy.m"; sourceTree = "<group>"; };
 		B85D419C463E28FC37916B34B734BF8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FCC963F0BBCADA92ED34E8D90ACD82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE063DBD29D84E4BC5E13846E64C4CEF /* BTJSBridge+Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BTJSBridge+Common.h"; path = "BTJSBridge/Classes/BTJSBridge+Common.h"; sourceTree = "<group>"; };
 		C2CA41F4630649EB1D8FEDCA9D475730 /* Pods-BTJSBridge_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BTJSBridge_Example-umbrella.h"; sourceTree = "<group>"; };
+		C445505CE897BF9EAEEB175D2977AC6C /* BTJSBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BTJSBridge.modulemap; sourceTree = "<group>"; };
 		D3922C01A6CFD02185AFA427DCD6445D /* Pods-BTJSBridge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BTJSBridge_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D8206AFF420DEB08CD6546A3CE99B186 /* Pods-BTJSBridge_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BTJSBridge_Example-dummy.m"; sourceTree = "<group>"; };
+		D84C8ED2E6870AE7306E28F4B3EB50B2 /* BTJSBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTJSBridge-prefix.pch"; sourceTree = "<group>"; };
+		DDAB2EBD4C2A61222C18444F451D3DCD /* BTJSBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTJSBridge.h; path = BTJSBridge/Classes/BTJSBridge.h; sourceTree = "<group>"; };
 		E92DEB64A948712F5911DD26DAF3B5F0 /* Pods-BTJSBridge_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BTJSBridge_Example.modulemap"; sourceTree = "<group>"; };
 		EA25F160BD9ECAEAEA5B2249FEC163C1 /* Pods-BTJSBridge_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BTJSBridge_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F1208F3BD5B95A8EF929387A7C1151D1 /* Pods-BTJSBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BTJSBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F90CFD6501C575A0AC0BB922DE6BABD6 /* WKWebView+BTJSBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+BTJSBridge.h"; path = "BTJSBridge/Classes/WKWebView+BTJSBridge.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +107,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B7DA659D479A0E796B7BFF67615A65F /* Frameworks */ = {
+		B0D659CB760CCDB572A2D3C8EF7DE91C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B1CAA6B93E6962C7C8E7AEA43509A33 /* Foundation.framework in Frameworks */,
+				258ED613EE8AD92F1E9BE1C8A12EF7DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DAE78B82D9F32A4B82E65F898BBABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B865F714A1574A05A9B2725596263788 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +132,20 @@
 				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E0FF313DAEC15382CDF00C75EFD554F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C445505CE897BF9EAEEB175D2977AC6C /* BTJSBridge.modulemap */,
+				AC02B77A5E859AD9AF91E89D618C3F88 /* BTJSBridge.xcconfig */,
+				B10286C6A9877030BFE8A668390F690B /* BTJSBridge-dummy.m */,
+				D84C8ED2E6870AE7306E28F4B3EB50B2 /* BTJSBridge-prefix.pch */,
+				ADF46EB1E37C9753CCF999D49B1C2A92 /* BTJSBridge-umbrella.h */,
+				B9FCC963F0BBCADA92ED34E8D90ACD82 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BTJSBridge";
 			sourceTree = "<group>";
 		};
 		73D3F514576841D3ACB9229E1E87D113 /* Pods-BTJSBridge_Example */ = {
@@ -102,10 +170,21 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C5DD6FC41BB2AFCF71FA2896CE4EEAA3 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F8F91CFB21A5350268607BDD137BC11B /* Products */,
+				9908B716CB1858513963C87EA8B45458 /* Products */,
 				AEBC0ABDB9F667656336FA8FF171C6C4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9908B716CB1858513963C87EA8B45458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BBC0F0B6D03B890415205396798D37D /* BTJSBridge.framework */,
+				8A620E19AD699344C0422D347314A716 /* Pods_BTJSBridge_Example.framework */,
+				5BAD93644F0C57B60AC5BA3119E0E5DC /* Pods_BTJSBridge_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AEBC0ABDB9F667656336FA8FF171C6C4 /* Targets Support Files */ = {
@@ -123,6 +202,47 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5DD6FC41BB2AFCF71FA2896CE4EEAA3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D46442FD684BD10A7B41D48ED0462A3E /* BTJSBridge */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D46442FD684BD10A7B41D48ED0462A3E /* BTJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB2EBD4C2A61222C18444F451D3DCD /* BTJSBridge.h */,
+				814DB8283E18C751DC41BC6DA9F4CE92 /* BTJSBridge.m */,
+				BE063DBD29D84E4BC5E13846E64C4CEF /* BTJSBridge+Common.h */,
+				83C5C8B325D8387107085FFEEEA258F1 /* BTJSBridge+Common.m */,
+				4232F3DDF0DD612369AF4BFDEB6412C1 /* BTJSBridgeDelegate.h */,
+				2E83F5ADB0FAF98BAD235C79FFA8A70C /* BTJSBridgeMessage.h */,
+				A4832FEFFD0B5CC579AC9261FCB3C138 /* BTJSBridgeMessage.m */,
+				F90CFD6501C575A0AC0BB922DE6BABD6 /* WKWebView+BTJSBridge.h */,
+				18873A646EB09C4EA138E608DA82C648 /* WKWebView+BTJSBridge.m */,
+				2DC733B7FDB5B2643FBE7AC4B568159E /* WKWebViewCookieManager.h */,
+				452CD4CCB9976C5019C2CFB7E16BF9EE /* WKWebViewCookieManager.m */,
+				48A52AC8BB64BE1A05F81F22AB98FA43 /* WKWebViewPoolHandler.h */,
+				0EA54AB9C020C0812BBB970552FAA4A6 /* WKWebViewPoolHandler.m */,
+				E27289D42FEF5B428CB32CC494ED1085 /* Pod */,
+				5E0FF313DAEC15382CDF00C75EFD554F /* Support Files */,
+			);
+			name = BTJSBridge;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E27289D42FEF5B428CB32CC494ED1085 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				481C6875F22E72BDF5A0ED72865C2DC1 /* BTJSBridge.podspec */,
+				A2E746C5627BC38CB32FD7DE6082138C /* LICENSE */,
+				04C43B02CF6778EB63A19D372D139A4C /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		F6B0B13A18357D0854CE4145885275C8 /* Pods-BTJSBridge_Tests */ = {
@@ -143,23 +263,14 @@
 			path = "Target Support Files/Pods-BTJSBridge_Tests";
 			sourceTree = "<group>";
 		};
-		F8F91CFB21A5350268607BDD137BC11B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B007E23BA409C424E32CAA3630E3AFEC /* Pods_BTJSBridge_Example.framework */,
-				008465F60A1F0A9ABA6492B1DE2A8E95 /* Pods_BTJSBridge_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		42FD1B33EC159AA643209D041D2673EB /* Headers */ = {
+		57424ABF35592C1EA200B104E0E01219 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B398EC99BFDE4946924604867497EA7 /* Pods-BTJSBridge_Example-umbrella.h in Headers */,
+				ED72E63BE5291A8A2748E06D3781CD50 /* Pods-BTJSBridge_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,25 +282,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F22646931C5F3C491EEA66E10B6C7A7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F7A38940DA7D27166580E3AE60B4E7 /* BTJSBridge+Common.h in Headers */,
+				3D78419FA838F7AF2364E8E0CD6B87E6 /* BTJSBridge-umbrella.h in Headers */,
+				C8FBCAD0B513EEDFB27011C6DE29DBDA /* BTJSBridge.h in Headers */,
+				3EE575505749E93A98DBAE2A0204CA9C /* BTJSBridgeDelegate.h in Headers */,
+				E346BD10A8316FCA1D76A50C4B114540 /* BTJSBridgeMessage.h in Headers */,
+				C5C7A32E6FD7FC1DE73F0402A2D5803B /* WKWebView+BTJSBridge.h in Headers */,
+				33AB2B3CDAFEB991B8AD012A1A444152 /* WKWebViewCookieManager.h in Headers */,
+				98B94E564B1FF4E2E88C63AA02C30007 /* WKWebViewPoolHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B776A08ADACFC4B8CCAA97949031863F /* Pods-BTJSBridge_Example */ = {
+		2A0DB72988DFC7C42CE6041242DFF323 /* Pods-BTJSBridge_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFC68CDA5C2FE9B9A4ED852DA5991886 /* Build configuration list for PBXNativeTarget "Pods-BTJSBridge_Example" */;
+			buildConfigurationList = D92D40EF7546E03F2C9B04633F5A9BA5 /* Build configuration list for PBXNativeTarget "Pods-BTJSBridge_Example" */;
 			buildPhases = (
-				42FD1B33EC159AA643209D041D2673EB /* Headers */,
-				E5408192E3688D33A0533DA44C597127 /* Sources */,
-				9B7DA659D479A0E796B7BFF67615A65F /* Frameworks */,
-				DA0C1923DA806699558690B3F5D97369 /* Resources */,
+				57424ABF35592C1EA200B104E0E01219 /* Headers */,
+				1CE6E1D2B767755932F48F6E131B1B07 /* Sources */,
+				C5DAE78B82D9F32A4B82E65F898BBABC /* Frameworks */,
+				579467529EB392471F61BE7D9DABED26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04361694267DD8406EFDAF348CFFC184 /* PBXTargetDependency */,
+			);
+			name = "Pods-BTJSBridge_Example";
+			productName = "Pods-BTJSBridge_Example";
+			productReference = 8A620E19AD699344C0422D347314A716 /* Pods_BTJSBridge_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A34D733CA731F383D3E5F938CC3C3892 /* BTJSBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3A23D333CECF23594FC8F033CEB6BC /* Build configuration list for PBXNativeTarget "BTJSBridge" */;
+			buildPhases = (
+				F22646931C5F3C491EEA66E10B6C7A7E /* Headers */,
+				A3C996468A2CA882CEE98C6E14018D12 /* Sources */,
+				B0D659CB760CCDB572A2D3C8EF7DE91C /* Frameworks */,
+				6790B07FF64D0FEA86113CC7AECA00F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-BTJSBridge_Example";
-			productName = "Pods-BTJSBridge_Example";
-			productReference = B007E23BA409C424E32CAA3630E3AFEC /* Pods_BTJSBridge_Example.framework */;
+			name = BTJSBridge;
+			productName = BTJSBridge;
+			productReference = 8BBC0F0B6D03B890415205396798D37D /* BTJSBridge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB97F973A66661774B1F30E28DE53591 /* Pods-BTJSBridge_Tests */ = {
@@ -208,7 +353,7 @@
 			);
 			name = "Pods-BTJSBridge_Tests";
 			productName = "Pods-BTJSBridge_Tests";
-			productReference = 008465F60A1F0A9ABA6492B1DE2A8E95 /* Pods_BTJSBridge_Tests.framework */;
+			productReference = 5BAD93644F0C57B60AC5BA3119E0E5DC /* Pods_BTJSBridge_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -225,15 +370,15 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F8F91CFB21A5350268607BDD137BC11B /* Products */;
+			productRefGroup = 9908B716CB1858513963C87EA8B45458 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B776A08ADACFC4B8CCAA97949031863F /* Pods-BTJSBridge_Example */,
+				A34D733CA731F383D3E5F938CC3C3892 /* BTJSBridge */,
+				2A0DB72988DFC7C42CE6041242DFF323 /* Pods-BTJSBridge_Example */,
 				EB97F973A66661774B1F30E28DE53591 /* Pods-BTJSBridge_Tests */,
 			);
 		};
@@ -247,7 +392,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA0C1923DA806699558690B3F5D97369 /* Resources */ = {
+		579467529EB392471F61BE7D9DABED26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6790B07FF64D0FEA86113CC7AECA00F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,26 +417,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5408192E3688D33A0533DA44C597127 /* Sources */ = {
+		1CE6E1D2B767755932F48F6E131B1B07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931E3EF84E23AF6642A817CB1A683AAA /* Pods-BTJSBridge_Example-dummy.m in Sources */,
+				8E3796DE033B20E468D11399A3B714E0 /* Pods-BTJSBridge_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3C996468A2CA882CEE98C6E14018D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1CB74F7DC3FACD1F7F47A44D97D089 /* BTJSBridge+Common.m in Sources */,
+				CEC74339AA161A25F508CEA0C2525EB1 /* BTJSBridge-dummy.m in Sources */,
+				3697FB28992AF78C5C5A1AA437C5279E /* BTJSBridge.m in Sources */,
+				BCC77210A8E28BEFF2757CF872C82137 /* BTJSBridgeMessage.m in Sources */,
+				794B867BD584964676BE1FA1D0DD1322 /* WKWebView+BTJSBridge.m in Sources */,
+				DC79F5E3D405B499A253BEED4D78B8D6 /* WKWebViewCookieManager.m in Sources */,
+				DDC2B0F191A3BF8ED97EF6879002C802 /* WKWebViewPoolHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04361694267DD8406EFDAF348CFFC184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTJSBridge;
+			target = A34D733CA731F383D3E5F938CC3C3892 /* BTJSBridge */;
+			targetProxy = 72DB5FAE0FD22B15BFA66C46A3ED1DAD /* PBXContainerItemProxy */;
+		};
 		9387780330FDB22976EA8BFC7B91D40B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BTJSBridge_Example";
-			target = B776A08ADACFC4B8CCAA97949031863F /* Pods-BTJSBridge_Example */;
+			target = 2A0DB72988DFC7C42CE6041242DFF323 /* Pods-BTJSBridge_Example */;
 			targetProxy = 24D3901956DB4691929673481BF5E7E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06D6653783B217DD99439A10573ECC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC02B77A5E859AD9AF91E89D618C3F88 /* BTJSBridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BTJSBridge/BTJSBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTJSBridge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BTJSBridge/BTJSBridge.modulemap";
+				PRODUCT_MODULE_NAME = BTJSBridge;
+				PRODUCT_NAME = BTJSBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		192283F265E72EB45C78E45C876145FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2FD2D09D3670B8BE1B1AC8B1E641F /* Pods-BTJSBridge_Tests.release.xcconfig */;
@@ -305,6 +508,40 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BTJSBridge_Tests/Pods-BTJSBridge_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DA2BA965AC2B1027AFB2478941D7E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1208F3BD5B95A8EF929387A7C1151D1 /* Pods-BTJSBridge_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BTJSBridge_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BTJSBridge_Example/Pods-BTJSBridge_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -377,39 +614,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		A1894CD432ED1694F6183B9FCFC6E242 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 757C32AA9F6A8885D13A9CFB9DF81749 /* Pods-BTJSBridge_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BTJSBridge_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BTJSBridge_Example/Pods-BTJSBridge_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CDDC36F891F20A1D8049EA3BBBBF2562 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -508,9 +712,9 @@
 			};
 			name = Debug;
 		};
-		E8AE0B96321D6124B7F873B78DEEDBA2 /* Release */ = {
+		D478AFC02CE9051ED20601C77F5375E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1208F3BD5B95A8EF929387A7C1151D1 /* Pods-BTJSBridge_Example.release.xcconfig */;
+			baseConfigurationReference = 757C32AA9F6A8885D13A9CFB9DF81749 /* Pods-BTJSBridge_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -536,11 +740,40 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		DAC4F28B8F06DDA6D74CBF5CF12CD019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC02B77A5E859AD9AF91E89D618C3F88 /* BTJSBridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BTJSBridge/BTJSBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTJSBridge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BTJSBridge/BTJSBridge.modulemap";
+				PRODUCT_MODULE_NAME = BTJSBridge;
+				PRODUCT_NAME = BTJSBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -563,11 +796,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFC68CDA5C2FE9B9A4ED852DA5991886 /* Build configuration list for PBXNativeTarget "Pods-BTJSBridge_Example" */ = {
+		BD3A23D333CECF23594FC8F033CEB6BC /* Build configuration list for PBXNativeTarget "BTJSBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1894CD432ED1694F6183B9FCFC6E242 /* Debug */,
-				E8AE0B96321D6124B7F873B78DEEDBA2 /* Release */,
+				DAC4F28B8F06DDA6D74CBF5CF12CD019 /* Debug */,
+				06D6653783B217DD99439A10573ECC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92D40EF7546E03F2C9B04633F5A9BA5 /* Build configuration list for PBXNativeTarget "Pods-BTJSBridge_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D478AFC02CE9051ED20601C77F5375E2 /* Debug */,
+				1DA2BA965AC2B1027AFB2478941D7E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

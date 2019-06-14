@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 7e24c3b4dff55a3a56ea551ea911e591cc99a7ba
+PODS:
+  - BTJSBridge (0.1.0)
+
+DEPENDENCIES:
+  - BTJSBridge (from `../`)
+
+EXTERNAL SOURCES:
+  BTJSBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BTJSBridge: 58cfd655b4e39dadd163ca2f83cbbda86ea86238
+
+PODFILE CHECKSUM: 1dc0e0ce1d0e81057dd6631e247a54754b5cdcc0
 
 COCOAPODS: 1.5.3

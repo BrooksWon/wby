@@ -14,13 +14,13 @@ typedef void(^HandlerBlock)(BTJSBridgeMessage * _Nullable msgObject);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BTJSBridge : NSObject<WKUIDelegate>
+@interface BTJSBridge : NSObject
 @property (nonatomic, weak) id<BTJSBridgeDelegate> delegate;
 
 - (void)bindBridgeWithWebView:(WKWebView *)webView;
 @end
 
-@interface BTJSBridge (JC_CALL_OC) <WKUIDelegate,WKScriptMessageHandler>
+@interface BTJSBridge (JC_CALL_OC) <WKUIDelegate,WKScriptMessageHandler,WKNavigationDelegate>
 -(void)registerHandler:(NSString *)handlerName Action:(NSString *)actionName handler:(HandlerBlock)handler;
 -(void)removeHandler:(NSString *)handlerName;
 @end

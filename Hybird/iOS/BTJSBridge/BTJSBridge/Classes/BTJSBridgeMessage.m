@@ -20,6 +20,12 @@
 
 @implementation BTJSBridgeMessage
 
+- (instancetype)init {
+    @throw [NSException exceptionWithName:@"BTJSBridgeMessage init error" reason:@"BTJSBridgeMessage must be initialized with a dictionary. Use 'initWithDictionary:' instead." userInfo:nil];
+    return [self initWithDictionary:nil];
+}
+
+
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
     if (self = [super init]) {
         self.handler = [dict objectForKey:NSStringFromSelector(@selector(handler))];
@@ -31,6 +37,7 @@
     
     return self;
 }
+
 
 - (void)setCallback:(JSResponseCallback)callback {
     self.rspCallback = callback;

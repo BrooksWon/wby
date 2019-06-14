@@ -4,3 +4,6 @@
 2. [归并排序和插入排序](算法/归并排序和插入排序.md)
 3. [迪杰斯特拉](算法/迪杰斯特拉/迪杰斯特拉.md)
 
+## 二、Hybird
+1. [Hybird](https://github.com/BrooksWon/wby/blob/master/Hybird/Docs/Hybird%E6%96%B9%E6%A1%88.md)
+
