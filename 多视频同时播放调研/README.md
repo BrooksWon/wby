@@ -1,4 +1,4 @@
-# 多视频同时播放测试
+# 多视频同时播放调研
 
 #### 测试方：APP开发
 
@@ -21,7 +21,7 @@
 2. 测试说明：每种情况下每个系统测试 2 人 * 3 次
 
 3. 测试系统：iOS、Android
-4. 硬件支持：iPhone 6s，iPhone XR，Redmi Note 5A，Pixel 3 XL，华为9e
+4. 硬件支持：iPhone 6s，iPhone X，Redmi Note 5A，Pixel 3 XL，华为9e
 
 
 
@@ -62,7 +62,7 @@
 
 **备注：**
 
-- 本次调研Android使用的是原生VideoView组价进行测试，在三个不同型号的手机Android版本分别为7.1.2和9.0下均正常同时播放多个视频；iOS使用的是原生的AVPlayer进行测试，6s和XR手机上均可正常同时播放多个视频。
+- 本次调研Android使用的是原生VideoView组价进行测试，在三个不同型号的手机Android版本分别为7.1.2和9.0下均正常同时播放多个视频；iOS使用的是原生的AVPlayer进行测试，6s和X手机上均可正常同时播放多个视频。
 
 ## 结论
 
